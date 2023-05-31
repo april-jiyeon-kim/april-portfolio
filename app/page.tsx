@@ -5,6 +5,7 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Career from "./components/Career";
 import Contact from "./components/Contact";
+import Education from "./components/Education";
 
 export default function Home() {
   return (
