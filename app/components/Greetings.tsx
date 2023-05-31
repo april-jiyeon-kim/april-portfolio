@@ -1,22 +1,21 @@
 "use client";
 
 import React, { useEffect } from "react";
-import Navigation from "./Navigation";
 
 const Greetings = (): JSX.Element => {
   useEffect(() => {}, []);
 
   return (
     <section
-      className="px-20 pt-5"
+      id="greetings"
+      className="relative px-20 pt-5"
       style={{
         backgroundImage: "url('/images/home_background.png')",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
       }}
     >
-      <Navigation />
-      <div className="flex justify-center px-48 align-middle py-14 ">
+      <div className="flex justify-center px-48 align-middle py-14">
         <div className="flex flex-row ">
           <h1 className="text-4xl font-bold text-white">Jiyeon Kim</h1>
           <div className="ml-64 ">

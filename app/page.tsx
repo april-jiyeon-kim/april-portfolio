@@ -6,16 +6,18 @@ import Projects from "./components/Projects";
 import Career from "./components/Career";
 import Contact from "./components/Contact";
 import Education from "./components/Education";
+import Navigation from "./components/Navigation";
 
 export default function Home() {
   return (
-    <div>
+    <>
+      <Navigation />
       <Greetings />
       <AboutMe />
       <Skills />
       <Projects />
       <Career />
       <Contact />
-    </div>
+    </>
   );
 }

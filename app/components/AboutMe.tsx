@@ -7,8 +7,8 @@ const AboutMe = (): JSX.Element => {
   useEffect(() => {}, []);
 
   return (
-    <section>
-      <div className="flex justify-center my-24 mx-28 ">
+    <section id="about-me">
+      <div className="flex justify-center py-24 px-28 ">
         <div className="flex flex-col justify-center m-auto align-middle ">
           <h1 className="mb-6 text-4xl font-bold text-purple">About me</h1>
           <h2 className="text-2xl font-bold text-orange ">
