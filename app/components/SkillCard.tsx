@@ -3,14 +3,24 @@ import React from "react";
 
 interface SkillCardProps {
   title: string;
-  icon?: string;
+  skillImg?: string;
 }
-
-const SkillCard: React.FC<SkillCardProps> = ({ title, icon }) => {
+const SkillCard: React.FC<SkillCardProps> = ({ title, skillImg }) => {
   return (
-    <div className="skill-card">
-      <h1 className="skill-card-title">{title}</h1>
-      {icon && <Image src={icon} alt={title} />}
+    <div className="drop-shadow-2xl relative px-8 py-8 bg-white rounded-3xl w-[310px] hover:scale-105 ease-in duration-300 ">
+      <h1 className="mb-4 text-2xl font-extrabold text-center text-orange">
+        {title}
+      </h1>
+      {skillImg && (
+        <Image
+          src={`${skillImg}`}
+          alt={title}
+          width={300}
+          height={200}
+          className="object-cover"
+          layout="responsive"
+        />
+      )}
     </div>
   );
 };
