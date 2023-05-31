@@ -16,22 +16,14 @@ const Career = (): JSX.Element => {
           <CareerCard
             title="VOITHRU"
             logo={"/images/voithru_logo.png"}
-            description="  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac
-            mauris ac risus malesuada maximus. Mauris eget nulla tristique, feugiat
-            tellus et, volutpat mi. Nulla pharetra varius erat, in eleifend nulla
-            pellentesque nec. Sed ut metus sit amet felis luctus congue. Quisque eu
-            sem nec enim consectetur ultrices."
-            duration="2019.07~2021.07"
+            description="Voithru is an AI-based crowdsourcing subtitle platform. I was responsible for developing and maintaining new features of the administrator tool for managing translators. I actively communicated with backend developers, as well as the product and design teams, to minimize miscommunication. The development was done using React (Next.js) and TypeScript, and I collaborated with the development team through daily code reviews."
+            duration="2022.01~2023.02"
           />
           <CareerCard
-            title="VOITHRU"
+            title="DOHE"
             logo={"/images/dohe_logo.png"}
-            description="  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac
-            mauris ac risus malesuada maximus. Mauris eget nulla tristique, feugiat
-            tellus et, volutpat mi. Nulla pharetra varius erat, in eleifend nulla
-            pellentesque nec. Sed ut metus sit amet felis luctus congue. Quisque eu
-            sem nec enim consectetur ultrices."
-            duration="2019.07~2021.07"
+            description=" Dohe is a startup accelerator. As a full-stack web developer, I developed a groupware for internal employees. I worked on developing new features and maintaining existing functionalities using PHP and Vue.js. I also conducted deployments using Jenkins."
+            duration="2019.10~2021.09"
           />
         </div>
       </div>
