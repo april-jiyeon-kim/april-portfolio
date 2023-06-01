@@ -30,6 +30,12 @@ module.exports = {
         greyBage: "#B8A5A5",
         lightGrey: "#F1F0EC",
       },
+      fontFamily: {
+        archivoblack: ["Archivo_Black"],
+        archivonarrow: ["Archivo_Narrow"],
+        karla: ["Karla"],
+        notosans: ["Noto_Sans", "sans-serif"],
+      },
     },
   },
   plugins: [],

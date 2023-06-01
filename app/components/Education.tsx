@@ -8,7 +8,9 @@ const Education = (): JSX.Element => {
 
   return (
     <div className="mt-20">
-      <h1 className="mb-6 text-4xl font-bold text-purple">Education</h1>
+      <h1 className="mb-6 text-4xl font-bold text-purple font-archivoblack">
+        Education
+      </h1>
       <EducationCard
         title="Information Technology"
         school="University of Southampton"

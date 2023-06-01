@@ -8,7 +8,7 @@ interface SkillCardProps {
 const SkillCard: React.FC<SkillCardProps> = ({ title, skillImg }) => {
   return (
     <div className="drop-shadow-2xl relative px-8 py-8 bg-white rounded-3xl w-[310px] hover:scale-105 ease-in duration-300 ">
-      <h1 className="mb-4 text-2xl font-extrabold text-center text-orange">
+      <h1 className="mb-4 text-2xl font-extrabold text-center text-orange font-archivoblack">
         {title}
       </h1>
       {skillImg && (

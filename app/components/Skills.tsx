@@ -9,7 +9,9 @@ const Skills = (): JSX.Element => {
   return (
     <section id="skills">
       <div className="relative flex flex-col items-center justify-center py-16 px-28 bg-orange">
-        <h1 className="mb-12 text-4xl font-bold text-white">SKILLS</h1>
+        <h1 className="mb-12 text-4xl font-bold text-white font-archivoblack">
+          SKILLS
+        </h1>
         <div className="flex flex-col flex-wrap h-[700px] content-center gap-x-24 gap-y-10">
           <SkillCard
             title="Frontend"
