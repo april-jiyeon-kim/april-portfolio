@@ -1,8 +1,30 @@
 import "./globals.css";
-import { Archivo } from "next/font/google";
+import {
+  Archivo,
+  Archivo_Black,
+  Archivo_Narrow,
+  Karla,
+} from "next/font/google";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 
 const archivo = Archivo({ subsets: ["latin"] });
+const archivoBlack = Archivo_Black({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--archivo-black",
+});
+const archivoNarrow = Archivo_Narrow({
+  subsets: ["latin"],
+  variable: "--archivo-narrow",
+});
+const karla = Karla({
+  subsets: ["latin"],
+  variable: "--karla",
+});
+
+export const cls = (...classnames: string[]) => {
+  return classnames.join(" ");
+};
 
 export const metadata = {
   title: "Create Next App",
@@ -16,7 +38,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={archivo.className}>{children}</body>
+      <body
+        className={cls(
+          archivo.className,
+          archivoBlack.variable,
+          archivoNarrow.variable,
+          karla.variable
+        )}
+      >
+        {children}
+      </body>
     </html>
   );
 }

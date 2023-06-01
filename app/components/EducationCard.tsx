@@ -16,15 +16,15 @@ const EducationCard: React.FC<EducationCardProps> = ({
 }) => {
   return (
     <div className="mb-8">
-      <h1 className="text-4xl font-extrabold text-green">
+      <h1 className="text-3xl italic font-extrabold text-green">
         {title}
         <span className="pl-1 text-base font-normal text-greyBage">
           {duration}
         </span>
       </h1>
-      <h4 className="py-1 text-2xl text-greyBage">{school}</h4>
+      <h4 className="text-xl text-greyBage">{school}</h4>
 
-      {description && <p className="text-2xl font-bold">{description}</p>}
+      {description && <p className="text-xl font-light">{description}</p>}
     </div>
   );
 };

@@ -31,10 +31,9 @@ module.exports = {
         lightGrey: "#F1F0EC",
       },
       fontFamily: {
-        archivoblack: ["Archivo_Black"],
-        archivonarrow: ["Archivo_Narrow"],
-        karla: ["Karla"],
-        notosans: ["Noto_Sans", "sans-serif"],
+        archivoblack: ["var(--archivo-black)"],
+        archivonarrow: ["var(--archivo-narrow)"],
+        karla: ["var(--karla)"],
       },
     },
   },

@@ -13,7 +13,7 @@ const AboutMe = (): JSX.Element => {
           <h1 className="mb-6 text-4xl font-bold text-purple font-archivoblack">
             About me
           </h1>
-          <h2 className="text-2xl font-bold text-orange ">
+          <h2 className="text-xl font-medium text-orange ">
             {`I am an open-minded person who is open to the perspectives,`}
             <br />
             {`values and
