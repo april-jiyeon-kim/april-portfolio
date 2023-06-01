@@ -55,14 +55,22 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           </div>
           <div className="flex flex-col w-full mb-2 md:flex-row md:mb-0">
             <div className="inline-block w-36 archivonarrow">GitHub</div>
-            <Link className="text-sm md:w-[calc(100%-10rem)] " href={github}>
+            <Link
+              className="text-sm md:w-[calc(100%-10rem)]  text-orange hover:underline"
+              href={github}
+              target="blank"
+            >
               {github}
             </Link>
           </div>
           {url && (
             <div className="flex flex-col w-full mb-2 md:flex-row md:mb-0">
               <div className="inline-block w-36 archivonarrow">URL</div>
-              <Link className="text-sm md:w-[calc(100%-10rem)] " href={url}>
+              <Link
+                className="text-sm md:w-[calc(100%-10rem)] text-orange hover:underline"
+                href={url}
+                target="blank"
+              >
                 {url}
               </Link>
             </div>

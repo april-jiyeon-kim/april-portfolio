@@ -21,6 +21,7 @@ const Projects = (): JSX.Element => {
             frontend="React Native"
             backend="Firebase"
             database="Firebase Firestore"
+            deployment="Vercel"
             design="Figma"
           />
         </div>
