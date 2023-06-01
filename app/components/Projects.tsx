@@ -8,7 +8,7 @@ const Projects = (): JSX.Element => {
 
   return (
     <section id="projects">
-      <div className="flex flex-col items-center justify-center px-6 py-16 bg-green ">
+      <div className="flex flex-col items-center justify-center px-4 py-16 md:px-6 md:py-16 bg-green ">
         <h1 className="mb-6 text-4xl font-bold text-white font-archivoblack">
           PROJECTS
         </h1>

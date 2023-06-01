@@ -15,12 +15,12 @@ const Greetings = (): JSX.Element => {
         backgroundSize: "cover",
       }}
     >
-      <div className="flex justify-center px-48 align-middle py-14">
-        <div className="flex flex-row ">
-          <h1 className="text-6xl font-extrabold text-white font-karla">
+      <div className="justify-center px-4 align-middle md:flex md:px-48 py-14">
+        <div className="flex flex-col items-center md:flex-row md:items-baseline">
+          <div className="text-3xl font-extrabold text-white md:text-4xl font-karla">
             Jiyeon Kim
-          </h1>
-          <div className="ml-64 ">
+          </div>
+          <div className="mt-4 md:mt-0 md:ml-64">
             <h1 className="text-4xl text-white font-archivoblack">
               Web <br /> Development <br /> Portfolio
             </h1>

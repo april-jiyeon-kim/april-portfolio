@@ -8,12 +8,12 @@ const AboutMe = (): JSX.Element => {
 
   return (
     <section id="about-me">
-      <div className="flex justify-center py-24 px-28 ">
+      <div className="flex justify-center py-16 m-8 md:py-24 md:px-28">
         <div className="flex flex-col justify-center m-auto align-middle ">
           <h1 className="mb-6 text-4xl font-bold text-purple font-archivoblack">
             About me
           </h1>
-          <h2 className="text-xl font-medium text-orange ">
+          <h2 className="font-medium md:text-xl text-orange ">
             {`I am an open-minded person who is open to the perspectives,`}
             <br />
             {`values and

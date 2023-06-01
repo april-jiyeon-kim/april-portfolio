@@ -8,7 +8,7 @@ const Career = (): JSX.Element => {
 
   return (
     <section id="career">
-      <div className="flex flex-col items-center pt-24 px-28 mb-52 ">
+      <div className="flex flex-col items-center pt-16 mb-8 md:pt-24 md:px-28 md:mb-52 ">
         <div className="flex flex-col justify-center mb-6 text-4xl font-bold text-black font-archivoblack">
           CAREER
         </div>

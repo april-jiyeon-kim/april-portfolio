@@ -12,7 +12,7 @@ const Skills = (): JSX.Element => {
         <h1 className="mb-12 text-4xl font-bold text-white font-archivoblack">
           SKILLS
         </h1>
-        <div className="flex flex-col flex-wrap h-[700px] content-center gap-x-24 gap-y-10">
+        <div className="flex flex-col flex-wrap lg:h-[700px] content-center gap-x-24 gap-y-10">
           <SkillCard
             title="Frontend"
             skillImg="/images/skills/frontendSkill.png"

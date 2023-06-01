@@ -7,13 +7,13 @@ const Contact = (): JSX.Element => {
 
   return (
     <section id="contact">
-      <div className="flex flex-col items-center justify-center py-16 text-white align-middle bg-black px-28">
+      <div className="flex flex-col items-center justify-center py-16 text-white align-middle bg-black lg:px-28">
         <Link href="https://github.com/april-jiyeon-kim" target="blank">
           <Image
             src={"/images/git-hub.png"}
             alt={"github"}
-            width={60}
-            height={60}
+            width={40}
+            height={40}
           />
         </Link>
         <span className="mt-5 text-sm ">
