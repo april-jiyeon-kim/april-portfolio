@@ -69,8 +69,8 @@ const Navigation = (): JSX.Element => {
           {isMobileMenuOpen ? "Close" : "Menu"}
         </button>
         <ul
-          className={`mt-10 md:mt-0 flex-col md:flex-row flex justify-end text-lg font-bold md:text-white  ${
-            isNavbarDark ? "md:text-black" : "text-black"
+          className={`mt-10 md:mt-0 flex-col md:flex-row flex justify-end text-lg font-bold ${
+            isNavbarDark ? "md:text-black" : " md:text-white "
           } ${isMobileMenuOpen ? "flex" : "hidden md:flex"}`}
         >
           <li className="mr-5">
