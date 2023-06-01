@@ -8,7 +8,7 @@ interface ProjectCardProps {
   description: string;
   mainInformation: string;
   github: string;
-  url: string;
+  url?: string;
   frontend: string;
   backend?: string;
   database?: string;
@@ -31,7 +31,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   return (
     <div className="flex flex-col max-w-6xl p-10 mx-auto mt-10 bg-white rounded-3xl ">
-      <div className="flex items-center justify-center w-full bg-black h-[400px]"></div>
+      <div className="flex items-center justify-center w-full bg-black h-[400px]">
+        <Image
+          src="/images/projects/tmp_readinghabbit.png"
+          alt={"tmp"}
+          width={600}
+          height={400}
+        />
+      </div>
       <div className="mb-4 text-4xl mt-14 font-extrabol font-archivoblack">
         {title}
       </div>
@@ -52,12 +59,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               {github}
             </Link>
           </div>
-          <div className="flex w-full">
-            <div className="inline-block w-36 archivonarrow">url</div>
-            <Link className="text-sm w-[calc(100%-10rem)] " href={url}>
-              {url}
-            </Link>
-          </div>
+          {url && (
+            <div className="flex w-full">
+              <div className="inline-block w-36 archivonarrow">URL</div>
+              <Link className="text-sm w-[calc(100%-10rem)] " href={url}>
+                {url}
+              </Link>
+            </div>
+          )}
+
           <div className="flex w-full">
             <div className="inline-block w-36 archivonarrow">Frontend</div>
             <div className="text-sm w-[calc(100%-10rem)] ">{frontend}</div>
