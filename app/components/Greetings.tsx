@@ -22,7 +22,7 @@ const Greetings = (): JSX.Element => {
           </div>
           <div className="mt-4 md:mt-0 md:ml-64">
             <h1 className="text-4xl text-white font-archivoblack">
-              Web <br /> Development <br /> Portfolio
+              Web <br /> Developer <br /> Portfolio
             </h1>
             <p className="mt-10 text-xl font-bold text-white">
               A Developer currently
