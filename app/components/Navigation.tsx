@@ -1,9 +1,13 @@
 "use client";
 
 import Link from "next/link";
-import React, { useEffect, useRef, useState } from "react";
 
-const Navigation = (): JSX.Element => {
+import React, { useEffect, useRef, useState } from "react";
+import { Link as ScrollLink } from "react-scroll";
+
+interface Navigationprops {}
+
+const Navigation: React.FC<Navigationprops> = () => {
   const [isNavbarDark, setIsNavbarDark] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const navbarRef = useRef<HTMLElement>(null);
@@ -73,35 +77,69 @@ const Navigation = (): JSX.Element => {
             isNavbarDark ? "md:text-black" : " md:text-white "
           } ${isMobileMenuOpen ? "flex" : "hidden md:flex"}`}
         >
-          <li className="mr-5">
-            <Link href="/" onClick={handleHomeClick}>
+          <li className="mr-5 cursor-pointer">
+            <ScrollLink to={""} onClick={handleHomeClick}>
               Home
-            </Link>
+            </ScrollLink>
           </li>
-          <li className="mr-5">
-            <Link href="#about-me" onClick={handleMobileMenuItemClick}>
+          <li className="mr-5 cursor-pointer">
+            <ScrollLink
+              to={"about-me"}
+              spy={true}
+              smooth={true}
+              offset={-50}
+              duration={700}
+              onClick={handleMobileMenuItemClick}
+            >
               About Me
-            </Link>
+            </ScrollLink>
           </li>
-          <li className="mr-5">
-            <Link href="#skills" onClick={handleMobileMenuItemClick}>
+          <li className="mr-5 cursor-pointer">
+            <ScrollLink
+              to={"skills"}
+              spy={true}
+              smooth={true}
+              duration={500}
+              onClick={handleMobileMenuItemClick}
+            >
               Skills
-            </Link>
+            </ScrollLink>
           </li>
-          <li className="mr-5">
-            <Link href="#projects" onClick={handleMobileMenuItemClick}>
+          <li className="mr-5 cursor-pointer">
+            <ScrollLink
+              to={"projects"}
+              spy={true}
+              smooth={true}
+              offset={-50}
+              duration={700}
+              onClick={handleMobileMenuItemClick}
+            >
               Projects
-            </Link>
+            </ScrollLink>
           </li>
-          <li className="mr-5">
-            <Link href="#career" onClick={handleMobileMenuItemClick}>
+          <li className="mr-5 cursor-pointer">
+            <ScrollLink
+              to={"career"}
+              spy={true}
+              smooth={true}
+              offset={-50}
+              duration={700}
+              onClick={handleMobileMenuItemClick}
+            >
               Career
-            </Link>
+            </ScrollLink>
           </li>
-          <li className="mr-5">
-            <Link href="#contact" onClick={handleMobileMenuItemClick}>
+          <li className="mr-5 cursor-pointer">
+            <ScrollLink
+              to={"contact"}
+              spy={true}
+              smooth={true}
+              offset={-50}
+              duration={700}
+              onClick={handleMobileMenuItemClick}
+            >
               Contact
-            </Link>
+            </ScrollLink>
           </li>
         </ul>
       </nav>
