@@ -2,8 +2,12 @@
 
 import React, { useEffect } from "react";
 import CareerCard from "./CareerCard";
+interface Career {
+  dohe: string;
+  voithru: string;
+}
 
-const Career = (): JSX.Element => {
+const Career: React.FC<{ career: Career }> = ({ career }) => {
   useEffect(() => {}, []);
 
   return (
@@ -16,13 +20,13 @@ const Career = (): JSX.Element => {
           <CareerCard
             title="VOITHRU"
             logo={"/images/voithru_logo.png"}
-            description="Voithru is an AI-based crowdsourcing subtitle platform. I was responsible for developing and maintaining new features of the administrator tool for managing translators. I actively communicated with backend developers, as well as the product and design teams, to minimize miscommunication. The development was done using React (Next.js) and TypeScript, and I collaborated with the development team through daily code reviews."
+            description={career.voithru}
             duration="2022.01~2023.02"
           />
           <CareerCard
             title="DOHE"
             logo={"/images/dohe_logo.png"}
-            description=" Dohe is a startup accelerator. As a full-stack web developer, I developed a groupware for internal employees. I worked on developing new features and maintaining existing functionalities using PHP and Vue.js. I also conducted deployments using Jenkins."
+            description={career.dohe}
             duration="2019.10~2021.09"
           />
         </div>

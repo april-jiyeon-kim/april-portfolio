@@ -16,7 +16,9 @@
     "@types/node": "20.2.5",
     "@types/react": "18.2.7",
     "@types/react-dom": "18.2.4",
+    "accept-language-parser": "^1.5.0",
     "autoprefixer": "10.4.14",
+    "cookies-next": "^2.1.1",
     "eslint": "8.41.0",
     "eslint-config-next": "13.4.4",
     "next": "13.4.4",
@@ -29,6 +31,7 @@
   },
   "devDependencies": {
     "@babel/preset-react": "^7.22.3",
+    "@types/accept-language-parser": "^1.5.3",
     "@types/react-scroll": "^1.8.7"
   }
 }

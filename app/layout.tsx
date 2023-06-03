@@ -6,6 +6,7 @@ import {
   Karla,
 } from "next/font/google";
 import "@fortawesome/fontawesome-svg-core/styles.css";
+import { I18nUrlManager } from "./components/I18nUrlManager";
 
 const archivo = Archivo({ subsets: ["latin"] });
 const archivoBlack = Archivo_Black({
@@ -61,6 +62,7 @@ export default function RootLayout({
           karla.variable
         )}
       >
+        {/* <I18nUrlManager /> */}
         {children}
       </body>
     </html>

@@ -3,7 +3,7 @@
 import React, { useEffect } from "react";
 import ProjectCard from "./ProjectCard";
 
-const Projects = (): JSX.Element => {
+const Projects: React.FC<{}> = () => {
   useEffect(() => {}, []);
 
   return (
