@@ -4,7 +4,7 @@
     "dohe": "Dohe is a startup accelerator. As a full-stack web developer, I developed a groupware for internal employees. I worked on developing new features and maintaining existing functionalities using PHP and Vue.js. I also conducted deployments using Jenkins."
   },
   "languageSwitcher": {
-    "code": "en",
-    "label": "EN"
+    "code": "ko",
+    "label": "한국어"
   }
 }
