@@ -30,7 +30,7 @@ const CareerCard: React.FC<CareerCardProps> = ({
           {title}
         </h1>
         <h4 className="mt-2 mb-3 lg:text-lg text-grey">{duration}</h4>
-        <h4>{description}</h4>
+        <h4 className="text-black">{description}</h4>
       </div>
     </div>
   );

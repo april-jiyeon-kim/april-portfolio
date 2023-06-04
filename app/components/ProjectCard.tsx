@@ -30,7 +30,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   design,
 }) => {
   return (
-    <div className="flex flex-col max-w-6xl p-10 mx-auto bg-white md:mt-10 rounded-3xl ">
+    <div className="flex flex-col max-w-6xl p-10 mx-auto text-black bg-white md:mt-10 rounded-3xl ">
       <div className="md:flex items-center justify-center w-full bg-black h-[400px] hidden">
         <Image
           src="/images/projects/tmp_readinghabbit.png"
