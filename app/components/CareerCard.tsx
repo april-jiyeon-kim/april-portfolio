@@ -26,11 +26,11 @@ const CareerCard: React.FC<CareerCardProps> = ({
         />
       )}
       <div className="mt-5 lg:ml-44">
-        <h1 className="text-2xl font-bold lg:text-4xl font-archivoblack">
+        <h1 className="text-2xl font-bold text-black lg:text-4xl font-archivoblack">
           {title}
         </h1>
         <h4 className="mt-2 mb-3 lg:text-lg text-grey">{duration}</h4>
-        <p className="lg:text-base ">{description}</p>
+        <h4>{description}</h4>
       </div>
     </div>
   );
