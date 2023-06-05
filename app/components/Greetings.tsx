@@ -16,7 +16,7 @@ const Greetings = (): JSX.Element => {
       }}
     >
       <div className="justify-center px-4 align-middle md:flex md:px-48 py-14">
-        <div className="flex flex-col items-center md:flex-row md:items-baseline">
+        <div className="flex flex-col items-center justify-between w-full max-w-5xl md:flex-row md:items-baseline">
           <div className="text-3xl font-extrabold text-white md:text-4xl font-karla">
             Jiyeon Kim
           </div>
