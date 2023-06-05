@@ -79,7 +79,8 @@ const Projects: React.FC<{ projects: Projects }> = ({ projects }) => {
             title="Portfolio Site"
             description={projects.previousPortfolioSite.description}
             mainInformation={projects.previousPortfolioSite.mainInformation}
-            github="https://april-jiyeon-kim.github.io/portfolio/"
+            url="https://april-jiyeon-kim.github.io/portfolio/"
+            github="https://github.com/april-jiyeon-kim/portfolio"
             frontend="Vanilla JS"
             deployment="GitHub"
             previewImgs={[

@@ -100,6 +100,10 @@ const Career: React.FC<{ career: Career }> = ({ career }) => {
                 src: "/images/techImgs/tailwind-icon.png",
                 alt: "tailwind-icon",
               },
+              {
+                src: "/images/techImgs/vercel-icon.png",
+                alt: "vercel-icon",
+              },
             ]}
           />
         </div>
