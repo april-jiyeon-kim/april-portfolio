@@ -15,6 +15,27 @@ interface Navigationprops {
   languageSwitcher: LanguageSwitcher;
 }
 
+const NavItem: React.FC<{
+  menu: string;
+  to: string;
+  onClick: () => void;
+}> = ({ menu, to, onClick }) => {
+  return (
+    <li className="mr-5 italic cursor-pointer hover:text-yellow">
+      <ScrollLink
+        to={to}
+        spy={true}
+        smooth={true}
+        offset={-50}
+        duration={700}
+        onClick={onClick}
+      >
+        {menu}
+      </ScrollLink>
+    </li>
+  );
+};
+
 const Navigation: React.FC<Navigationprops> = ({ languageSwitcher }) => {
   const [isNavbarDark, setIsNavbarDark] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -93,70 +114,32 @@ const Navigation: React.FC<Navigationprops> = ({ languageSwitcher }) => {
             isNavbarDark ? "md:text-black" : " md:text-white "
           } ${isMobileMenuOpen ? "flex" : "hidden md:flex"}`}
         >
-          <li className="mr-5 cursor-pointer">
-            <ScrollLink to={""} onClick={handleHomeClick}>
-              Home
-            </ScrollLink>
-          </li>
-          <li className="mr-5 cursor-pointer">
-            <ScrollLink
-              to={"about-me"}
-              spy={true}
-              smooth={true}
-              offset={-50}
-              duration={700}
-              onClick={handleMobileMenuItemClick}
-            >
-              About Me
-            </ScrollLink>
-          </li>
-          <li className="mr-5 cursor-pointer">
-            <ScrollLink
-              to={"skills"}
-              spy={true}
-              smooth={true}
-              duration={500}
-              onClick={handleMobileMenuItemClick}
-            >
-              Skills
-            </ScrollLink>
-          </li>
-          <li className="mr-5 cursor-pointer">
-            <ScrollLink
-              to={"projects"}
-              spy={true}
-              smooth={true}
-              offset={-50}
-              duration={700}
-              onClick={handleMobileMenuItemClick}
-            >
-              Projects
-            </ScrollLink>
-          </li>
-          <li className="mr-5 cursor-pointer">
-            <ScrollLink
-              to={"career"}
-              spy={true}
-              smooth={true}
-              offset={-50}
-              duration={700}
-              onClick={handleMobileMenuItemClick}
-            >
-              Career
-            </ScrollLink>
-          </li>
-          <li className="mr-5 cursor-pointer">
-            <ScrollLink
-              to={"contact"}
-              spy={true}
-              smooth={true}
-              offset={-50}
-              duration={700}
-              onClick={handleMobileMenuItemClick}
-            >
-              Contact
-            </ScrollLink>
-          </li>
+          <NavItem menu="home" to="" onClick={handleHomeClick} />
+          <NavItem
+            menu="about me"
+            to="about-me"
+            onClick={handleMobileMenuItemClick}
+          />
+          <NavItem
+            menu="skills"
+            to="skills"
+            onClick={handleMobileMenuItemClick}
+          />
+          <NavItem
+            menu="projects"
+            to="projects"
+            onClick={handleMobileMenuItemClick}
+          />
+          <NavItem
+            menu="career"
+            to="career"
+            onClick={handleMobileMenuItemClick}
+          />
+          <NavItem
+            menu="contact"
+            to="contact"
+            onClick={handleMobileMenuItemClick}
+          />
         </ul>
       </nav>
     </header>

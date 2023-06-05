@@ -30,6 +30,7 @@ module.exports = {
         purple: "#6667AA",
         greyBage: "#B8A5A5",
         lightGrey: "#F1F0EC",
+        yellow: "#FFF500",
       },
       fontFamily: {
         archivoblack: ["var(--archivo-black)"],
