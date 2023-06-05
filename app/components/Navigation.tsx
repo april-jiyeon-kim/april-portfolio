@@ -95,11 +95,14 @@ const Navigation: React.FC<Navigationprops> = ({ languageSwitcher }) => {
         }`}
       >
         <div
-          className={`flex items-center justify-center h-10 w-12 ${
+          className={`flex items-center justify-center h-10 w-12  hover:text-yellow  ${
             isNavbarDark ? "md:text-black" : "md:text-white"
           }`}
         >
-          <Link href={`/?language=${languageSwitcher.code}`}>
+          <Link
+            className="absolute flex justify-center top-4 left-4 md:static"
+            href={`/?language=${languageSwitcher.code}`}
+          >
             {languageSwitcher.label}
           </Link>
         </div>
