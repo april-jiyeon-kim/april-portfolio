@@ -5,6 +5,8 @@ import CareerCard from "./CareerCard";
 interface Career {
   dohe: string;
   voithru: string;
+  outsourcing: string;
+  freelancer: string;
 }
 
 const Career: React.FC<{ career: Career }> = ({ career }) => {
@@ -33,6 +35,10 @@ const Career: React.FC<{ career: Career }> = ({ career }) => {
                 src: "/images/techImgs/typescript-icon.png",
                 alt: "typescript-icon",
               },
+              {
+                src: "/images/techImgs/graphql-icon.png",
+                alt: "graphql-icon",
+              },
             ]}
           />
           <CareerCard
@@ -59,6 +65,40 @@ const Career: React.FC<{ career: Career }> = ({ career }) => {
               {
                 src: "/images/techImgs/jenkins-icon.png",
                 alt: "jenkins-icon",
+              },
+            ]}
+          />
+          <CareerCard
+            title="FREELANCER"
+            description={career.freelancer}
+            duration="2022.07~2023.10"
+            techImgs={[
+              {
+                src: "/images/techImgs/react-icon.png",
+                alt: "react-icon",
+                width: 36,
+              },
+            ]}
+          />
+          <CareerCard
+            title="OUTSOURCING"
+            description={career.outsourcing}
+            duration="2022.10~2023.12"
+            techImgs={[
+              {
+                src: "/images/techImgs/react-icon.png",
+                alt: "react-icon",
+                width: 36,
+              },
+              { src: "/images/techImgs/nextjs-icon.png", alt: "nextjs-icon" },
+              {
+                src: "/images/techImgs/vue-icon.png",
+                alt: "vue-icon",
+                width: 38,
+              },
+              {
+                src: "/images/techImgs/tailwind-icon.png",
+                alt: "tailwind-icon",
               },
             ]}
           />

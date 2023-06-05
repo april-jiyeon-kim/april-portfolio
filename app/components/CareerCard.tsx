@@ -3,7 +3,7 @@ import React from "react";
 
 interface CareerCardProps {
   title: string;
-  logo: string;
+  logo?: string;
   description: string;
   duration: string;
   techImgs?: ImageProps[];
@@ -18,16 +18,18 @@ const CareerCard: React.FC<CareerCardProps> = ({
 }) => {
   return (
     <div className="flex flex-row m-8 lg:mt-32 lg:max-w-6xl">
-      {logo && (
-        <Image
-          className="hidden lg:block"
-          src={logo}
-          alt={title}
-          width={230}
-          height={217}
-        />
-      )}
-      <div className="mt-5 lg:ml-44">
+      <div className="lg:w-60">
+        {logo && (
+          <Image
+            className="hidden lg:block"
+            src={logo}
+            alt={title}
+            width={230}
+            height={217}
+          />
+        )}
+      </div>
+      <div className="mt-5 lg:ml-44 lg:w-[calc(100%-15rem)] ">
         <h1 className="text-2xl font-bold text-black lg:text-4xl font-archivoblack">
           {title}
         </h1>
