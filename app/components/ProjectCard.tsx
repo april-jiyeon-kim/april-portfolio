@@ -1,10 +1,10 @@
-import Image from "next/image";
+import Image, { ImageProps } from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 
 interface ProjectCardProps {
   title: string;
-  previewImgs?: string[];
+  previewImgs?: ImageProps[];
   description: string;
   mainInformation: string;
   github: string;
@@ -32,12 +32,20 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   return (
     <div className="flex flex-col max-w-6xl p-10 mx-auto text-black bg-white md:mt-10 rounded-3xl ">
       <div className="md:flex items-center justify-center w-full bg-black h-[400px] hidden">
-        <Image
-          src="/images/projects/tmp_readinghabbit.png"
-          alt={"tmp"}
-          width={600}
-          height={400}
-        />
+        {previewImgs &&
+          previewImgs.map((img, idx) => (
+            <Image
+              key={`${title}_img_${idx}`}
+              src={img.src}
+              alt={img.alt}
+              width={img.width || 31}
+              height={img.height || 31}
+              // width={0}
+              // height={0}
+              // sizes="100vw"
+              // style={{ width: "90%", height: "auto" }}
+            />
+          ))}
       </div>
       <div className="mb-4 text-2xl md:text-4xl md:mt-14 font-extrabol font-archivoblack">
         {title}

@@ -3,7 +3,18 @@
 import React, { useEffect } from "react";
 import ProjectCard from "./ProjectCard";
 
-const Projects: React.FC<{}> = () => {
+interface Project {
+  description: string;
+  mainInformation: string;
+}
+interface Projects {
+  readingHabbit: Project;
+  portfolioSite: Project;
+  weddingCard: Project;
+  previousPortfolioSite: Project;
+}
+
+const Projects: React.FC<{ projects: Projects }> = ({ projects }) => {
   useEffect(() => {}, []);
 
   return (
@@ -12,17 +23,73 @@ const Projects: React.FC<{}> = () => {
         <h1 className="mb-6 text-4xl font-bold text-white font-archivoblack">
           PROJECTS
         </h1>
-        <div>
+        <div className="flex flex-col gap-y-4">
           <ProjectCard
             title="Reading Habit"
-            description="I recently developed ReadingHabit, a mobile app designed to help users cultivate a daily reading habit. The app provides a simple and intuitive interface to track reading progress, set goals, and get personalized recommendations based on reading history and preferences. It was a valuable experience for me to have the opportunity to directly use the Figma tool, which I had previously only used in collaboration with designers."
-            mainInformation={`Log the number of books they've read and the percentage of their reading goals they've achieved Keep track of their reading habits in the form of a pie chart, Record their favorite quotes and notes for each book, Set wish books and add books to their reading list, keep track of the books they're currently reading and the books they've finished reading `}
+            description={projects.readingHabbit.description}
+            mainInformation={projects.readingHabbit.mainInformation}
             github="https://github.com/april-jiyeon-kim/reading-habit"
             frontend="React Native"
             backend="Firebase"
             database="Firebase Firestore"
+            design="Figma"
+            previewImgs={[
+              {
+                src: "/images/projects/tmp_readinghabbit.png",
+                alt: "tmp_readinghabbit",
+                width: 600,
+                height: 400,
+              },
+            ]}
+          />
+          <ProjectCard
+            title="Portfolio Site"
+            description={projects.portfolioSite.description}
+            mainInformation={projects.portfolioSite.mainInformation}
+            github="https://github.com/april-jiyeon-kim/april-portfolio"
+            frontend="Nextjs"
             deployment="Vercel"
             design="Figma"
+            previewImgs={[
+              {
+                src: "/images/projects/portfolio.png",
+                alt: "portfolio",
+                width: 700,
+                height: 400,
+              },
+            ]}
+          />
+          <ProjectCard
+            title="Wedding Card"
+            description={projects.weddingCard.description}
+            mainInformation={projects.weddingCard.mainInformation}
+            github="https://github.com/april-jiyeon-kim/wedding-card-v2"
+            frontend="React"
+            deployment="Heroku"
+            previewImgs={[
+              {
+                src: "/images/projects/wedding-card.jpg",
+                alt: "wedding-card",
+                width: 250,
+                height: 400,
+              },
+            ]}
+          />
+          <ProjectCard
+            title="Portfolio Site"
+            description={projects.previousPortfolioSite.description}
+            mainInformation={projects.previousPortfolioSite.mainInformation}
+            github="https://april-jiyeon-kim.github.io/portfolio/"
+            frontend="Vanilla JS"
+            deployment="GitHub"
+            previewImgs={[
+              {
+                src: "/images/projects/portfolio-previous.png",
+                alt: "portfolio",
+                width: 650,
+                height: 400,
+              },
+            ]}
           />
         </div>
       </div>
