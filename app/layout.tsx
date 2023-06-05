@@ -52,7 +52,7 @@ export default function RootLayout({
           property="og:description"
           content="This is a Web Devloper April's portfolio."
         />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       </head>
       <body
         className={cls(
