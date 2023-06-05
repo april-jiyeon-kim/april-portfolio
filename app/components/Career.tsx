@@ -22,12 +22,45 @@ const Career: React.FC<{ career: Career }> = ({ career }) => {
             logo={"/images/voithru_logo.png"}
             description={career.voithru}
             duration="2022.01~2023.02"
+            techImgs={[
+              {
+                src: "/images/techImgs/react-icon.png",
+                alt: "react-icon",
+                width: 36,
+              },
+              { src: "/images/techImgs/nextjs-icon.png", alt: "nextjs-icon" },
+              {
+                src: "/images/techImgs/typescript-icon.png",
+                alt: "typescript-icon",
+              },
+            ]}
           />
           <CareerCard
             title="DOHE"
             logo={"/images/dohe_logo.png"}
             description={career.dohe}
             duration="2019.10~2021.09"
+            techImgs={[
+              {
+                src: "/images/techImgs/php-icon.png",
+                alt: "php-icon",
+                width: 60,
+              },
+              {
+                src: "/images/techImgs/vue-icon.png",
+                alt: "vue-icon",
+                width: 38,
+              },
+              {
+                src: "/images/techImgs/bootstrap-icon.png",
+                alt: "bootstrap-icon",
+                width: 43,
+              },
+              {
+                src: "/images/techImgs/jenkins-icon.png",
+                alt: "jenkins-icon",
+              },
+            ]}
           />
         </div>
       </div>

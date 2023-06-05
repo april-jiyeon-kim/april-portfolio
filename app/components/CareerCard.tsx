@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image, { ImageProps } from "next/image";
 import React from "react";
 
 interface CareerCardProps {
@@ -6,6 +6,7 @@ interface CareerCardProps {
   logo: string;
   description: string;
   duration: string;
+  techImgs?: ImageProps[];
 }
 
 const CareerCard: React.FC<CareerCardProps> = ({
@@ -13,6 +14,7 @@ const CareerCard: React.FC<CareerCardProps> = ({
   logo,
   description,
   duration,
+  techImgs,
 }) => {
   return (
     <div className="flex flex-row m-8 lg:mt-32 lg:max-w-6xl">
@@ -29,6 +31,21 @@ const CareerCard: React.FC<CareerCardProps> = ({
         <h1 className="text-2xl font-bold text-black lg:text-4xl font-archivoblack">
           {title}
         </h1>
+        {techImgs && (
+          <div className="flex h-8 mt-2">
+            {techImgs.map((img, idx) => (
+              <Image
+                key={`${title}_img_${idx}`}
+                className="mr-2"
+                src={img.src}
+                alt={img.alt}
+                width={img.width || 31}
+                height={img.height || 31}
+              />
+            ))}
+          </div>
+        )}
+
         <h4 className="mt-2 mb-3 lg:text-lg text-grey">{duration}</h4>
         <h4 className="text-black">{description}</h4>
       </div>
