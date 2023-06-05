@@ -19,9 +19,9 @@ export default function Home({
     <>
       <Navigation languageSwitcher={i18n.languageSwitcher} />
       <Greetings />
-      <AboutMe />
+      <AboutMe introduction={i18n.aboutMe} />
       <Skills />
-      <Projects />
+      <Projects projects={i18n.projects} />
       <Career career={i18n.career} />
       <Contact />
     </>

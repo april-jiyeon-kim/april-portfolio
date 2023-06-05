@@ -3,7 +3,7 @@
 import React, { useEffect } from "react";
 import Education from "./Education";
 
-const AboutMe = (): JSX.Element => {
+const AboutMe: React.FC<{ introduction: string }> = ({ introduction }) => {
   useEffect(() => {}, []);
 
   return (
@@ -13,20 +13,8 @@ const AboutMe = (): JSX.Element => {
           <h1 className="mb-6 text-4xl font-bold text-purple font-archivoblack">
             About me
           </h1>
-          <h2 className="font-medium md:text-xl text-orange ">
-            {`I am an open-minded person who is open to the perspectives,`}
-            <br />
-            {`values and
-          traditions of other individuals and communities.`}
-            <br />
-            {`I try my best to
-          listen and understand others.`}
-            <br />
-            {`Continuous learning and improvement are
-          important to me.`}
-            <br />
-            {`I'm passionate about filling the gap between computer
-          science and organisational applications of IT systems.`}
+          <h2 className="font-medium whitespace-pre-wrap md:text-xl text-orange">
+            {introduction}
           </h2>
           <Education />
         </div>
