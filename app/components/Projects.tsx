@@ -49,6 +49,7 @@ const Projects: React.FC<{ projects: Projects }> = ({ projects }) => {
             github="https://github.com/april-jiyeon-kim/april-portfolio"
             frontend="Nextjs"
             deployment="Vercel"
+            url="https://www.kjy-portfolio.com/"
             design="Figma"
             previewImgs={[
               {
