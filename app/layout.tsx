@@ -4,9 +4,10 @@ import {
   Archivo_Black,
   Archivo_Narrow,
   Karla,
+  Nanum_Gothic,
+  Noto_Sans,
 } from "next/font/google";
 import "@fortawesome/fontawesome-svg-core/styles.css";
-import { I18nUrlManager } from "./components/I18nUrlManager";
 
 const archivo = Archivo({ subsets: ["latin"] });
 const archivoBlack = Archivo_Black({
@@ -21,6 +22,11 @@ const archivoNarrow = Archivo_Narrow({
 const karla = Karla({
   subsets: ["latin"],
   variable: "--karla",
+});
+const notoSans = Noto_Sans({
+  weight: "600",
+  subsets: ["latin"],
+  variable: "--noto-sans",
 });
 
 export const metadata = {
@@ -59,10 +65,10 @@ export default function RootLayout({
           archivo.className,
           archivoBlack.variable,
           archivoNarrow.variable,
-          karla.variable
+          karla.variable,
+          notoSans.variable
         )}
       >
-        {/* <I18nUrlManager /> */}
         {children}
       </body>
     </html>

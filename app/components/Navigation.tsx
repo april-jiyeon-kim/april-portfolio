@@ -1,19 +1,12 @@
 "use client";
 
-import { preferredTranslations } from "@/translations";
 import Link from "next/link";
 
 import React, { useEffect, useRef, useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
+import Language from "./Language";
 
-interface LanguageSwitcher {
-  code: string;
-  label: string;
-}
-
-interface Navigationprops {
-  languageSwitcher: LanguageSwitcher;
-}
+interface Navigationprops {}
 
 const NavItem: React.FC<{
   menu: string;
@@ -36,7 +29,7 @@ const NavItem: React.FC<{
   );
 };
 
-const Navigation: React.FC<Navigationprops> = ({ languageSwitcher }) => {
+const Navigation: React.FC<Navigationprops> = ({}) => {
   const [isNavbarDark, setIsNavbarDark] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const navbarRef = useRef<HTMLElement>(null);
@@ -90,21 +83,16 @@ const Navigation: React.FC<Navigationprops> = ({ languageSwitcher }) => {
     <header>
       <nav
         ref={navbarRef}
-        className={`bg-white fixed w-full flex justify-center md:justify-around items-center py-2 px-4 transition-all duration-[animation-duration] z-10 ${
+        className={`bg-white fixed w-full flex justify-between md:justify-between items-center py-2 px-10 transition-all duration-[animation-duration] z-10 ${
           isNavbarDark ? "md:bg-white md:bg-opacity-80" : "md:bg-transparent"
         }`}
       >
         <div
-          className={`flex items-center justify-center h-10 w-12  hover:text-yellow  ${
+          className={`flex items-center justify-center h-10 w-12  ${
             isNavbarDark ? "md:text-black" : "md:text-white"
           }`}
         >
-          <Link
-            className="absolute flex justify-center top-4 left-4 md:static"
-            href={`/?language=${languageSwitcher.code}`}
-          >
-            {languageSwitcher.label}
-          </Link>
+          <Language />
         </div>
         <button
           className={`block md:hidden absolute top-4 right-4 text-black`}

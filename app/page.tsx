@@ -5,24 +5,17 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Career from "./components/Career";
 import Contact from "./components/Contact";
-import Education from "./components/Education";
 import Navigation from "./components/Navigation";
-import { preferredTranslations } from "@/translations";
 
-export default function Home({
-  searchParams,
-}: {
-  searchParams?: { language?: string };
-}) {
-  const i18n = preferredTranslations(searchParams?.language || null);
+export default function Home({}: {}) {
   return (
     <>
-      <Navigation languageSwitcher={i18n.languageSwitcher} />
+      <Navigation />
       <Greetings />
-      <AboutMe introduction={i18n.aboutMe} />
+      <AboutMe />
       <Skills />
-      <Projects projects={i18n.projects} />
-      <Career career={i18n.career} />
+      <Projects />
+      <Career />
       <Contact />
     </>
   );

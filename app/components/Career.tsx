@@ -2,16 +2,10 @@
 
 import React, { useEffect } from "react";
 import CareerCard from "./CareerCard";
-interface Career {
-  dohe: string;
-  voithru: string;
-  outsourcing: string;
-  freelancer: string;
-}
+import { useTranslation } from "next-i18next";
 
-const Career: React.FC<{ career: Career }> = ({ career }) => {
-  useEffect(() => {}, []);
-
+const Career: React.FC<{}> = ({}) => {
+  const { t } = useTranslation();
   return (
     <section id="career">
       <div className="flex flex-col items-center pt-16 mb-8 md:pt-24 md:px-28 md:mb-52 ">
@@ -22,7 +16,7 @@ const Career: React.FC<{ career: Career }> = ({ career }) => {
           <CareerCard
             title="VOITHRU"
             logo={"/images/voithru_logo.png"}
-            description={career.voithru}
+            description={t("career.voithru")}
             duration="2022.01~2023.02"
             techImgs={[
               {
@@ -44,7 +38,7 @@ const Career: React.FC<{ career: Career }> = ({ career }) => {
           <CareerCard
             title="DOHE"
             logo={"/images/dohe_logo.png"}
-            description={career.dohe}
+            description={t("career.dohe")}
             duration="2019.10~2021.09"
             techImgs={[
               {
@@ -70,7 +64,7 @@ const Career: React.FC<{ career: Career }> = ({ career }) => {
           />
           <CareerCard
             title="FREELANCER"
-            description={career.freelancer}
+            description={t("career.freelancer")}
             duration="2022.07~2023.10"
             techImgs={[
               {
@@ -82,7 +76,7 @@ const Career: React.FC<{ career: Career }> = ({ career }) => {
           />
           <CareerCard
             title="OUTSOURCING"
-            description={career.outsourcing}
+            description={t("career.outsourcing")}
             duration="2022.10~2023.12"
             techImgs={[
               {

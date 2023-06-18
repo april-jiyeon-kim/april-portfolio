@@ -36,6 +36,7 @@ module.exports = {
         archivoblack: ["var(--archivo-black)"],
         archivonarrow: ["var(--archivo-narrow)"],
         karla: ["var(--karla)"],
+        notosans: ["var(--noto-sans)"],
       },
     },
   },

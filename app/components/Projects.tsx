@@ -2,21 +2,10 @@
 
 import React, { useEffect } from "react";
 import ProjectCard from "./ProjectCard";
+import { useTranslation } from "next-i18next";
 
-interface Project {
-  description: string;
-  mainInformation: string;
-}
-interface Projects {
-  readingHabbit: Project;
-  portfolioSite: Project;
-  weddingCard: Project;
-  previousPortfolioSite: Project;
-}
-
-const Projects: React.FC<{ projects: Projects }> = ({ projects }) => {
-  useEffect(() => {}, []);
-
+const Projects: React.FC<{}> = ({}) => {
+  const { t } = useTranslation();
   return (
     <section id="projects">
       <div className="flex flex-col items-center justify-center px-4 py-16 md:px-6 md:py-16 bg-green ">
@@ -26,8 +15,8 @@ const Projects: React.FC<{ projects: Projects }> = ({ projects }) => {
         <div className="flex flex-col gap-y-4">
           <ProjectCard
             title="Reading Habit"
-            description={projects.readingHabbit.description}
-            mainInformation={projects.readingHabbit.mainInformation}
+            description={t("projects.readingHabit.description")}
+            mainInformation={t("projects.readingHabit.mainInformation")}
             github="https://github.com/april-jiyeon-kim/reading-habit"
             frontend="React Native"
             backend="Firebase"
@@ -44,8 +33,8 @@ const Projects: React.FC<{ projects: Projects }> = ({ projects }) => {
           />
           <ProjectCard
             title="Portfolio Site"
-            description={projects.portfolioSite.description}
-            mainInformation={projects.portfolioSite.mainInformation}
+            description={t("projects.portfolioSite.description")}
+            mainInformation={t("projects.portfolioSite.mainInformation")}
             github="https://github.com/april-jiyeon-kim/april-portfolio"
             frontend="Nextjs"
             deployment="Vercel"
@@ -62,8 +51,8 @@ const Projects: React.FC<{ projects: Projects }> = ({ projects }) => {
           />
           <ProjectCard
             title="Wedding Card"
-            description={projects.weddingCard.description}
-            mainInformation={projects.weddingCard.mainInformation}
+            description={t("projects.weddingCard.description")}
+            mainInformation={t("projects.weddingCard.mainInformation")}
             github="https://github.com/april-jiyeon-kim/wedding-card-v2"
             frontend="React"
             deployment="Heroku"
@@ -78,8 +67,10 @@ const Projects: React.FC<{ projects: Projects }> = ({ projects }) => {
           />
           <ProjectCard
             title="Portfolio Site"
-            description={projects.previousPortfolioSite.description}
-            mainInformation={projects.previousPortfolioSite.mainInformation}
+            description={t("projects.previousPortfolioSite.description")}
+            mainInformation={t(
+              "projects.previousPortfolioSite.mainInformation"
+            )}
             url="https://april-jiyeon-kim.github.io/portfolio/"
             github="https://github.com/april-jiyeon-kim/portfolio"
             frontend="Vanilla JS"

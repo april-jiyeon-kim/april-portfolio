@@ -3,8 +3,6 @@
 import React, { useEffect } from "react";
 
 const Greetings = (): JSX.Element => {
-  useEffect(() => {}, []);
-
   return (
     <section
       id="greetings"

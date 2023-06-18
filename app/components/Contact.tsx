@@ -3,8 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect } from "react";
 const Contact = (): JSX.Element => {
-  useEffect(() => {}, []);
-
   return (
     <section id="contact">
       <div className="flex flex-col items-center justify-center py-16 text-white align-middle bg-black lg:px-28">

@@ -4,8 +4,6 @@ import React, { useEffect } from "react";
 import EducationCard from "./EducationCard";
 
 const Education = (): JSX.Element => {
-  useEffect(() => {}, []);
-
   return (
     <div className="mt-20">
       <h1 className="mb-6 text-4xl font-bold text-purple font-archivoblack">
