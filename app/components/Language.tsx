@@ -10,7 +10,7 @@ const Language: React.FC<{}> = () => {
   };
 
   return (
-    <>
+    <div className="absolute flex items-center justify-center top-2 md:static">
       {languages.map(({ text, code }, index) => (
         <button
           type="button"
@@ -25,7 +25,7 @@ const Language: React.FC<{}> = () => {
           {text}
         </button>
       ))}
-    </>
+    </div>
   );
 };
 

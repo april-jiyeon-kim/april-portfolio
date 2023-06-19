@@ -103,7 +103,7 @@ const Navigation: React.FC<Navigationprops> = ({}) => {
         <ul
           className={`mt-10 md:mt-0 flex-col md:flex-row flex justify-end text-lg font-bold ${
             isNavbarDark ? "md:text-black" : " md:text-white "
-          } ${isMobileMenuOpen ? "flex" : "hidden md:flex"}`}
+          } ${isMobileMenuOpen ? "flex w-full text-center" : "hidden md:flex"}`}
         >
           <NavItem menu="home" to="" onClick={handleHomeClick} />
           <NavItem
