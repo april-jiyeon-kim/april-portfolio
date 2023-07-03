@@ -50,22 +50,6 @@ const Projects: React.FC<{}> = ({}) => {
             ]}
           />
           <ProjectCard
-            title="Wedding Card"
-            description={t("projects.weddingCard.description")}
-            mainInformation={t("projects.weddingCard.mainInformation")}
-            github="https://github.com/april-jiyeon-kim/wedding-card-v2"
-            frontend="React"
-            deployment="Heroku"
-            previewImgs={[
-              {
-                src: "/images/projects/wedding-card.jpg",
-                alt: "wedding-card",
-                width: 250,
-                height: 400,
-              },
-            ]}
-          />
-          <ProjectCard
             title="Portfolio Site"
             description={t("projects.previousPortfolioSite.description")}
             mainInformation={t(
