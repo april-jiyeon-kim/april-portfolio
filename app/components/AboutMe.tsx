@@ -14,6 +14,7 @@ const AboutMe: React.FC<{}> = ({}) => {
           <h1 className="mb-6 text-4xl font-bold text-purple font-archivoblack">
             About me
           </h1>
+          <h2>test</h2>
           <h2
             className={`${
               i18n.language === "ko"
