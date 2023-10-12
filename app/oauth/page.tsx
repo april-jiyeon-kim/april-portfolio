@@ -12,6 +12,7 @@ export default function Oauth({}: {}) {
     <div className="flex flex-col">
       <button onClick={() => console.log(mallId)}>Mall 이름</button>
       <Link href={API_URL}>카페24 연동하기</Link>
+      <Link href={"oauth/success"}>성공 페이지</Link>
     </div>
   );
 }
