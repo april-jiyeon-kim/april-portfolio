@@ -14,6 +14,24 @@ const Career: React.FC<{}> = ({}) => {
         </div>
         <div>
           <CareerCard
+            title="CRYSBE"
+            logo={"/images/crysbe_logo.png"}
+            description={t("career.crysbe")}
+            duration="2023.08~"
+            techImgs={[
+              {
+                src: "/images/techImgs/react-icon.png",
+                alt: "react-icon",
+                width: 36,
+              },
+              { src: "/images/techImgs/nextjs-icon.png", alt: "nextjs-icon" },
+              {
+                src: "/images/techImgs/typescript-icon.png",
+                alt: "typescript-icon",
+              },
+            ]}
+          />
+          <CareerCard
             title="VOITHRU"
             logo={"/images/voithru_logo.png"}
             description={t("career.voithru")}
