@@ -117,13 +117,13 @@ const Navigation: React.FC<Navigationprops> = ({}) => {
             onClick={handleMobileMenuItemClick}
           />
           <NavItem
-            menu="projects"
-            to="projects"
+            menu="career"
+            to="career"
             onClick={handleMobileMenuItemClick}
           />
           <NavItem
-            menu="career"
-            to="career"
+            menu="projects"
+            to="projects"
             onClick={handleMobileMenuItemClick}
           />
           <NavItem
