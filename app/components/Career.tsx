@@ -1,8 +1,8 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React from "react";
 import CareerCard from "./CareerCard";
-import { useTranslation } from "next-i18next";
+import { useTranslation, Trans } from "next-i18next";
 
 const Career: React.FC<{}> = ({}) => {
   const { t } = useTranslation();
@@ -16,8 +16,16 @@ const Career: React.FC<{}> = ({}) => {
           <CareerCard
             title="CRYSBE"
             logo={"/images/crysbe_logo.png"}
-            description={t("career.crysbe")}
-            duration="2023.08~"
+            description={
+              <Trans
+                i18nKey="career.crysbe"
+                components={{
+                  ul: <ul className="list-disc pl-5 space-y-1 text-gray-800" />,
+                  li: <li />,
+                }}
+              />
+            }
+            duration="2023.08~2025.04"
             techImgs={[
               {
                 src: "/images/techImgs/react-icon.png",

@@ -4,7 +4,7 @@ import React from "react";
 interface CareerCardProps {
   title: string;
   logo?: string;
-  description: string;
+  description: React.ReactNode;
   duration: string;
   techImgs?: ImageProps[];
 }

@@ -14,8 +14,8 @@ export default function Home({}: {}) {
       <Greetings />
       <AboutMe />
       <Skills />
-      <Projects />
       <Career />
+      <Projects />
       <Contact />
     </>
   );

@@ -44,5 +44,6 @@
     "cross-env": "^7.0.3",
     "jsdom": "^22.1.0",
     "vitest": "^0.34.4"
-  }
+  },
+  "packageManager": "yarn@3.0.0+sha512.4df2aab4c18d8b6a348ec7d5d325569db19fed2ad8a0243af619e15407c7be316db5ddfea5a4a8f88656812a2132f17f8378c515c88729373c53b20909aca93e"
 }

@@ -6,7 +6,7 @@
   },
   "aboutMe": "I am an open-minded person who is open to the perspectives,\nvalues and traditions of other individuals and communities.\nI try my best to listen and understand others.\nContinuous learning and improvement are important to me.\nI'm passionate about filling the gap between computer science and organisational applications of IT systems.",
   "career": {
-    "crysbe": "I am currently involved in the maintenance of a beta version dashboard, which displays key performance indicators critical to business management. Additionally, I am actively developing the initial version of the official release.",
+    "crysbe": "<ul><li>Developed and maintained a beta business dashboard</li><li>Led the initial setup and development of the official platform using Next.js and TypeScript within a monorepo architecture.</li><li>Built a dynamic data visualization dashboard using Highcharts, rendering 30+ chart types with real-time filtering, unit switching, and user-defined conditions.</li><li> 16+ third-party APIs (Google Ads, Facebook, TikTok, Shopee, etc.) via OAuth</li></ul>",
     "voithru": "Voithru is an AI-based crowdsourcing subtitle platform. I was responsible for developing and maintaining new features of the administrator tool for managing translators. I actively communicated with backend developers, as well as the product and design teams, to minimize miscommunication. The development was done using React (Next.js) and TypeScript, and I collaborated with the development team through daily code reviews.",
     "dohe": "Dohe is a startup accelerator. As a full-stack web developer, I developed a groupware for internal employees. I worked on developing new features and maintaining existing functionalities using PHP and Vue.js. I also conducted deployments using Jenkins.",
     "outsourcing": "I developed a website where you can take an online stock investment course. It was a task to renew the existing website, which was originally developed in Vue.js, using React.",
@@ -22,7 +22,7 @@
       "mainInformation": "Introduction, skills, individual projects, career experience, contact"
     },
     "weddingCard": {
-      "description": "I made a simple website for weddinb invitation. I made two different urls for the request of my mother in law so that she can ask her needs to her friends.",
+      "description": "I made a simple website for wedding invitation. I made two different urls for the request of my mother in law so that she can ask her needs to her friends.",
       "mainInformation": "Invitation, gallaries"
     },
     "previousPortfolioSite": {
